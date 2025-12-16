@@ -3,31 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Curriculum vitae</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
-    <header>
-        <nav>
-            <ul>
-                <li>About me</li>
-                <li>Skills</li>
-                <li>Opleiding</li>
-                <li>Ervaring</li>
-                <li>Contact me</li>
-            </ul>
-        </nav>
-        <section>
-            <div>
-                <h2>Latthakone</h2>
-                <h1>Pathavong</h1>
-                <h3>I'm a Junior dev in training</h3>
+
+    <!-- HEADER + NAVIGATIE -->
+
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="logo">L<span class ="gold">p</span></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about"> About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#opleiding">Opleiding</a></li>
+                    <li><a href="#ervaring">Ervaring</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+            <div class="hero-img">
+                <a href="https://www.linkedin.com/in/latthakone-pathavong-a08b82396/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/ik.png" alt="LinkedIn profiel van Latthakone" class="my-image"></a>
+            </div>
+
+            <div class="hero-container">
+                <h2 class="hero-firstname">Latthakone</h2>
+                <h1 class="hero-lastname">Pathavong</h1>
+                <p class="hero-subtitle">I'm a Junior dev in training</p>
             </div>
         </section>
     </header>
+
     <main>
-        <section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about">
             <h2>About me</h2>
             <p>Ik ben student Graduaat Programmeren aan Hogeschool PXL, met een sterke interesse in zowel
                 front-end als back-end ontwikkeling. Ik haal veel voldoening uit het analyseren van problemen
@@ -38,7 +59,9 @@
                 basis, nauwkeurigheid en probleemoplossend vermogen gegeven en vaardigheden die ik nu met passie inzet
                 in softwareontwikkeling.</p>
         </section>
-        <section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
             <h2>Skills</h2>
             <div>
                 <h3>Technische kennis</h3>
@@ -108,7 +131,9 @@
                 </table>
             </div>
         </section>
-        <section>
+
+        <!-- OPLEIDING SECTION -->
+        <section id="opleiding">
             <h2>Opleiding</h2>
             <h3>Graduaat Programmeren</h3>
             <p>Hogeschool PXL | heden</p>
@@ -117,7 +142,9 @@
             <h3>Economie Moderne Talen</h3>
             <p>Sint-Jan Berchmanscollege Mol | 1996</p>
         </section>
-        <section>
+
+        <!-- ERVARING SECTION -->
+        <section id="ervaring">
             <div>
                 <h2>Professionele ervaring</h2>
                 <div>
@@ -157,8 +184,18 @@
                 </div>
             </div>
         </section>
+
+        <!-- CONTACT ME SSECTION -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vennestraat 58 bus 102</p>
+            <p>2400 Mol</p>
+            <p>BELGIE</p>
+        </section>
     </main>
+
     <footer>
+        <!-- FOOTER-->
         <section>
             <div>
                 <p>Latthakone Pathavong 1PRO-E</p>
