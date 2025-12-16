@@ -10,8 +10,12 @@ body {
     color: #8f8f8f;
 }
 
-/* logo & navbar*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* logo & navbar*/
 .header-container {
     display: flex;
     align-items: center;
@@ -32,7 +36,6 @@ body {
 
 .navbar ul {
     list-style: none;
-    color: #8f8f8f;
     display: flex;
     gap: 0.5rem;
     margin-right: 1rem;
@@ -47,10 +50,8 @@ body {
 }
 
 /*Hero section*/
-
-.hero{
+.hero {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8rem;
@@ -69,15 +70,15 @@ body {
 .my-image {
     max-width: 260px;
     width: 100%;
+    height: auto;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 .my-image:hover {
     box-shadow: 10px 12px 12px #000000;
 }
 
-.hero-firstname{
+.hero-firstname {
     font-weight: 300;
     font-size: 3rem;
     line-height: 1;
@@ -85,19 +86,94 @@ body {
     margin: 0;
 }
 
-.hero-lastname{
+.hero-lastname {
     font-family: "Bebas Neue", sans-serif;
-    font-weight: 800;
     font-size: 8rem;
     margin: 0.2rem 0 1rem;
     color: #d4b35a;
     text-transform: uppercase;
 }
 
-.hero-subtitle{
+.hero-subtitle {
     color: #b5b5b5;
     font-size: 1.2rem;
     margin: 0;
 }
 
 /*About me section*/
+.section {
+    padding: 10rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.about-title {
+    color: #d4b35a;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about {
+    color: #b5b5b5;
+    line-height: 1.9;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+/*Opleiding & taal*/
+.edu-lang {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.edu-lang h2 {
+    color: #d4b35a;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.edu {
+    color: #a7a7a7;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.edu-p {
+    color: #b5b5b5;
+    margin: 0 0 1rem 0;
+}
+
+.lang-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.lang-table th, .lang-table td {
+    padding: 0.3rem 0.3rem;
+    text-align: left;
+}
+
+.lang-table thead th {
+    background: rgba(212,179,90,0.12);
+    color: #a7a7a7;
+    font-weight: 700;
+}
+
+.lang-table tbody tr:nth-child(even){
+    background: rgba(255,255,255,0.08);
+}
+
+.lang-table tbody tr:nth-child(odd){
+    background: rgba(255,255,255,0.04);
+}
+
+.lang-table tbody td{
+    color: #b5b5b5;
+}
